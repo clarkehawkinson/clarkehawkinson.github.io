@@ -1,7 +1,8 @@
 /* This is my main CSS file*/
 
 {
-    box-sizing: border-box;
+    box-sizing: border-box;/* changes width property
+    to total width instead of content width */
 }
 
 article,
@@ -13,15 +14,16 @@ nav,
 img,
 section,
 main,
-h1,
 figcaption,
 figure{
-    display: block;
+    display : block; /* just in case we have
+any older browsers that don't recognize
+the HTML5 semantic elements */
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0; /* remove any margin from body */
+    padding: 0;/* ditto for padding */
     background-color: salmon
 }
 
@@ -31,7 +33,8 @@ main {
     align-items: center;
 }
 ul {
-    display: flex
+    display: flex;
+
 }
 h1 {
     text-align: right;
@@ -45,6 +48,12 @@ nav {
     bottom: 0;
     left: 0;
     right: 0
+}
+
+p{
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
 }
 
 footer {
