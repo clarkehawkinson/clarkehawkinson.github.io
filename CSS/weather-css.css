@@ -1,0 +1,52 @@
+/* This is my main CSS file*/
+
+{
+    box-sizing: border-box;
+}
+
+article,
+aside,
+footer,
+header,
+head,
+nav,
+img,
+section,
+main,
+h1,
+figcaption,
+figure{
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: salmon
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+ul {
+    display: flex
+}
+h1 {
+    text-align: right;
+    margin-top: 0em
+}
+.title h1+h1 {
+    text-align: right
+}
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+footer {
+    line-height: 1.25em
+}
