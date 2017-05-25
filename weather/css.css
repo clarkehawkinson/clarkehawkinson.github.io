@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Sansita') * {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Sansita') {
+    box-sizing: border-box
     /* changes width property
     to total width instead of content width */
 }
@@ -68,8 +68,6 @@ nav a:link {
     color: black
 }
 
-
-}
 .title h1+h1 {
     text-align: right;
 }
@@ -78,7 +76,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6
 {
     font-family: Sansita, "second choice", generic-family;
 }
