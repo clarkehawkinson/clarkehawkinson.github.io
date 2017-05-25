@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita') * {
+    box-sizing: border-box;
+    /* changes width property
+    to total width instead of content width */
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;
+    /* just in case we have
+any older browsers that don't recognize
+the HTML5 semantic elements */
+}
+
+body {
+    margin: 0;
+    /* remove any margin from body */
+    padding: 0;
+    /* ditto for padding */
+    font-size: 20px;
+    background-image: url("sunny-winter.jpg");
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: right;
+    background-color: #a6d8db
+}
+
+.cur_conditons {
+    text-align: right
+}
+
+ul {
+    display: flex
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f07c6c;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #47556f
+}
+
+.title {
+    color: black
+}
+
+
+}
+.title h1+h1 {
+    text-align: right;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+    font-family: Sansita, "second choice", generic-family;
+}
+.cur_conditions {
+    background-color: rgba(200, 200, 200, .6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.dice {
+    transform: rotate(25deg);
+    display: inline-block;
+}
