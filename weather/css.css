@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Sansita') {
+ {
     box-sizing: border-box
     /* changes width property
     to total width instead of content width */
+        @import url('https://fonts.googleapis.com/css?family=Sansita')
 }
 
 article,
