@@ -1,64 +1,151 @@
-html{
-    padding:0;
-    border:0
+@media only screen and (max-width 600px) {
+    * {
+        box-sizing: border-box;
+        /* changes width property
+    to total width instead of content width */
+    }
+    article,
+    aside,
+    footer,
+    header,
+    nav,
+    section,
+    main,
+    figcaption,
+    figure {
+        display: block;
+        /* just in case we have
+any older browsers that don't recognize
+the HTML5 semantic elements */
+    }
+    body {
+        margin: 0;
+        /* remove any margin from body */
+        padding: 0;
+        /* ditto for padding */
+        background-image: url(sunny-winter.jpg);
+        background-size: cover
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: Sansita, "second choice", generic-family;
+    }
+    @import url('https://fonts.googleapis.com/css?family=Sansita');
+    .title h1+h1 {
+        text-align: right;
+    }
+    header {
+        background-color: aqua;
+        text-align: right
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0
+    }
+    .col3 {
+        order: -1;
+        text-align: center;
+    }
+    .top {
+        width: 150px;
+        background-color: rgba(200, 200, 200, .6);
+        border: .2px solid;
+        border-radius: 5px
+    }
+    .col1 {
+        text-align: center;
+        background-color: rgba(200, 200, 200, .6);
+        border: 1px solid;
+        border-radius: 5px;
+        align-self:
+    }
+    ul {
+        display: flex
+    }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Sansita, "second choice", generic-family;
-}
-@import url('https://fonts.googleapis.com/css?family=Sansita');
-body{
-    font-size: 20px;
-      background-image: url(sunny-winter.jpg)
-        
-}
-header{
-    background-color: aqua;
-    text-align: center
-}
-
-header h2{
-    text-align: right
-}
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-}
-
-nav{
-    background-color: salmon;
-    position: fixed;
-    bottom:0;
-    right: 0;
-    left:0
-    
-}
-.col3{
-    order:-1;
-    text-align: center;
-    
-}
-.top{
-    width: 150px;
-    background-color: rgba(200, 200, 200, .6);
-    border: .2px solid;
-    border-radius: 5px
-}
-.col1{
-    
-    text-align: center;
-    background-color: rgba(200, 200, 200, .6);
-    border: 1px solid;
-    border-radius: 5px;
-    align-self: 
-}
-nav{
-    
+@media only screen and (min-width: 600px) {
+    body {
+        margin: 0;
+        /* remove any margin from body */
+        padding: 0;
+        /* ditto for padding */
+        background-color: aqua;
+        background-size: cover
+    }
+    article,
+    aside,
+    footer,
+    header,
+    nav,
+    section,
+    main,
+    figcaption,
+    figure {
+        display: block;
+        /* just in case we have
+any older browsers that don't recognize
+the HTML5 semantic elements */
+    }
+    header {
+        background-color: aqua;
+        text-align: center;
+        font-size: 2em
+    }
+    .title h1+h1 {
+        text-align: left
+    }
+    ul {
+        display: flex;
+    }
+    li {
+        margin-left: 50px;
+        margin-right: 120px
+    }
+    nav {
+        display: flex;
+        background-color: salmon;
+    }
+    main {
+        display: flex;
+        flex-direction: column nowrap;
+    }
+    .col1 {
+        order: -1;
+        height: 500px;
+        width: 250px;
+        background-color: lime
+    }
+    .col3 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        background-image: url(sunny-winter.jpg);
+        background-size: cover;
+        flex: 1;
+        font-size: 2em;
+    }
+    .top {
+        background-color: rgba(200, 200, 200, .6);
+        border: 1px solid;
+        border-radius: 5px;
+        width: 150px
+    }
+    .col2 {
+        align-items: flex-end;
+        background-color: lime;
+        width: 200px
+    }
 }
