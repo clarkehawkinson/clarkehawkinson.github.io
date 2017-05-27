@@ -65,7 +65,8 @@ the HTML5 semantic elements */
         }
     }
     
-    @media screen only and (max-width: 600px) {
+    @media only screen and (min-width: 600px) {
+        /*For Desktops*/
         article,
         aside,
         footer,
@@ -118,7 +119,7 @@ the HTML5 semantic elements */
             font-family: Sansita, "second choice", generic-family;
         }
         main {
-            background-image: url(sunny-winter.jpg);
+            background-color: lawngreen
         }
         nav {
             display: flex;
@@ -138,6 +139,7 @@ the HTML5 semantic elements */
             padding: 20px;
         }
         .col1 {
+            order: -1;
             flex-direction: column;
             max-width: 250px;
             align-self: center
@@ -163,7 +165,9 @@ the HTML5 semantic elements */
             margin: .2em;
             border: 1px;
             border-radius: 5px;
-            height: 200px;
-            align-self: center
+            height: 150px;
+            width: 200px;
+            align-self: center;
+            text-align: center
         }
     }
