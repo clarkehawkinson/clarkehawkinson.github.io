@@ -1,8 +1,10 @@
- {
+@media screen only and (max-width 600px) {}
+
+{
     box-sizing: border-box
     /* changes width property
     to total width instead of content width */
-        @import url('https://fonts.googleapis.com/css?family=Sansita')
+    @import url('https://fonts.googleapis.com/css?family=Sansita')
 }
 
 article,
@@ -30,11 +32,7 @@ body {
     background-size: cover;
 }
 
-main {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
+main {}
 
 header {
     display: flex;
@@ -42,14 +40,6 @@ header {
     align-items: center;
     text-align: right;
     background-color: #a6d8db
-}
-
-.cur_conditons {
-    text-align: right
-}
-
-ul {
-    display: flex
 }
 
 nav {
@@ -65,29 +55,56 @@ nav a:link {
     color: #47556f
 }
 
-.title {
-    color: black
-}
-
 .title h1+h1 {
     text-align: right;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6
-{
+h6 {
     font-family: Sansita, "second choice", generic-family;
 }
-.cur_conditions {
+
+.col1{
+    flex-direction: column;
+    max-width: 150px
+}
+.col2{
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 200px;
+    max-height: 1000px;
+    
+
+}
+.col3{
+        
     background-color: rgba(200, 200, 200, .6);
-    margin: .2em auto;
+    margin: auto;
     border: 1px solid;
-    border-radius: 5px;
+    border-radius: 5px
 }
 .dice {
     transform: rotate(25deg);
     display: inline-block;
+}
+@media screen and (min-width: 600px) {}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-flow: row;
+    align-content: space-between
+}
+
+nav {
+    display: flex;
+    position: relative;
+}
+
+nav li a {
+    padding: 20px;
 }
