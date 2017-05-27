@@ -1,4 +1,4 @@
-@media only screen and (max-width 600px) {
+
     * {
         box-sizing: border-box;
         /* changes width property
@@ -31,10 +31,11 @@ the HTML5 semantic elements */
     h3,
     h4,
     h5,
-    h6 {
+    h6,
+    li {font-size: 4em;
         font-family: Sansita, "second choice", generic-family;
     }
-    @import url('https://fonts.googleapis.com/css?family=Sansita');
+  
     .title h1+h1 {
         text-align: right;
     }
@@ -51,8 +52,13 @@ the HTML5 semantic elements */
         position: fixed;
         bottom: 0;
         right: 0;
-        left: 0
+        left: 0;
+        background-color: salmon;
+        
     }
+ul{display:flex;
+}
+li{padding-right: 50px}
     .col3 {
         order: -1;
         text-align: center;
@@ -68,20 +74,11 @@ the HTML5 semantic elements */
         background-color: rgba(200, 200, 200, .6);
         border: 1px solid;
         border-radius: 5px;
-        align-self:
-    }
-    ul {
-        display: flex
-    }
+        align-self: center;
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 601px) {
     body {
-        margin: 0;
-        /* remove any margin from body */
-        padding: 0;
-        /* ditto for padding */
-        background-color: aqua;
         background-size: cover
     }
     article,
@@ -102,10 +99,7 @@ the HTML5 semantic elements */
         background-color: aqua;
         text-align: center;
         font-size: 2em
-    }
-    .title h1+h1 {
-        text-align: left
-    }
+     }
     ul {
         display: flex;
     }
@@ -113,10 +107,7 @@ the HTML5 semantic elements */
         margin-left: 50px;
         margin-right: 120px
     }
-    nav {
-        display: flex;
-        background-color: salmon;
-    }
+
     main {
         display: flex;
         flex-direction: column nowrap;
@@ -135,7 +126,7 @@ the HTML5 semantic elements */
         background-image: url(sunny-winter.jpg);
         background-size: cover;
         flex: 1;
-        font-size: 2em;
+        
     }
     .top {
         background-color: rgba(200, 200, 200, .6);
