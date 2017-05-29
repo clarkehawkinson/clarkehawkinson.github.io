@@ -1,142 +1,106 @@
-
-    * {
-        box-sizing: border-box;
-        /* changes width property
+* {
+    box-sizing: border-box;
+    /* changes width property
     to total width instead of content width */
-    }
-    article,
-    aside,
-    footer,
-    header,
-    nav,
-    section,
-    main,
-    figcaption,
-    figure {
-        display: block;
-        /* just in case we have
-any older browsers that don't recognize
-the HTML5 semantic elements */
-    }
-    body {
-        margin: 0;
-        /* remove any margin from body */
-        padding: 0;
-        /* ditto for padding */
-        background-image: url(sunny-winter.jpg);
-        background-size: cover
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    li {font-size: 4em;
-        font-family: Sansita, "second choice", generic-family;
-    }
-  
-    .title h1+h1 {
-        text-align: right;
-    }
-    header {
-        background-color: aqua;
-        text-align: right
-    }
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    nav {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background-color: salmon;
-        
-    }
-ul{display:flex;
-}
-li{padding-right: 50px}
-    .col3 {
-        order: -1;
-        text-align: center;
-    }
-    .top {
-        width: 150px;
-        background-color: rgba(200, 200, 200, .6);
-        border: .2px solid;
-        border-radius: 5px
-    }
-    .col1 {
-        text-align: center;
-        background-color: rgba(200, 200, 200, .6);
-        border: 1px solid;
-        border-radius: 5px;
-        align-self: center;
 }
 
-@media (min-width: 601px) {
-    body {
-        background-size: cover
-    }
-    article,
-    aside,
-    footer,
-    header,
-    nav,
-    section,
-    main,
-    figcaption,
-    figure {
-        display: block;
-        /* just in case we have
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;
+    /* just in case we have
 any older browsers that don't recognize
 the HTML5 semantic elements */
-    }
-    header {
-        background-color: aqua;
-        text-align: center;
-        font-size: 2em
-     }
-    ul {
-        display: flex;
-    }
-    li {
-        margin-left: 50px;
-        margin-right: 120px
-    }
+}
 
-    main {
-        display: flex;
-        flex-direction: column nowrap;
-    }
-    .col1 {
-        order: -1;
-        height: 500px;
-        width: 250px;
-        background-color: lime
-    }
-    .col3 {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        background-image: url(sunny-winter.jpg);
-        background-size: cover;
-        flex: 1;
-        
-    }
-    .top {
-        background-color: rgba(200, 200, 200, .6);
-        border: 1px solid;
-        border-radius: 5px;
-        width: 150px
-    }
-    .col2 {
-        align-items: flex-end;
-        background-color: lime;
-        width: 200px
+body {
+    margin: 0;
+    /* remove any margin from body */
+    padding: 0;
+    /* ditto for padding */
+    background-image: url(sunny-winter.jpg);
+    background-size: cover
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ul,
+p,
+dl {
+    font-size: ;
+    font-family: Sansita, "second choice", generic-family;
+}
+
+.title h1+h1 {
+    text-align: right;
+}
+
+header {
+    background-color: aqua;
+    text-align: right
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: salmon;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    padding-right: 50px
+}
+
+p, dl {
+    font-size: 2em
+}
+
+.col3 {
+    order: -1;
+    text-align: center;
+}
+
+.top {
+    width: 150px;
+    background-color: rgba(200, 200, 200, .6);
+    border: .2px solid;
+    border-radius: 5px
+}
+
+.col1 {
+    display: flex;
+    text-align: center;
+    background-color: rgba(200, 200, 200, .6);
+    border: 1px solid;
+    border-radius: 5px;
+    align-self: center;
+}
+
+@media screen and  (min-width: 500px){
+    
+    p{
+        font-size: 5em
     }
 }
