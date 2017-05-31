@@ -1,3 +1,61 @@
+@media screen and (min-width: 700px) {
+    header {
+        margin:0;
+        padding:0;
+        background-color: aqua;
+        text-align: center;
+    }
+    body {
+     margin: 0;
+    /* remove any margin from body */
+    padding: 0;
+        /* ditto for padding */ 
+}
+    main{
+        display: flex;
+        
+    }
+    .col1 {
+        width: 200px;
+        display: flex;
+        order:-1;
+        height: 450px;
+        
+    }
+      .col2 {
+        width: 150px;
+        display: flex
+    }
+    .col3 {
+        background-image: url(sunny-winter.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+        flex-grow: 1
+        
+    }
+
+    nav {
+        display: flex;
+        background-color: salmon
+    }
+    li {
+        padding-right: 50px
+    }
+    ul {
+        display: flex;
+    }
+    .top {
+        flex-direction: column;
+        background-color: rgba(200, 200, 200, .6);
+        border: 1px solid;
+        border-radius: 5px;
+        width: 150px;
+        text-align: center
+    }
+}
+@media screen and (max-width: 699px){
 article,
 aside,
 footer,
@@ -80,6 +138,7 @@ p, dl {
 .col3 {
     order: -1;
     text-align: center;
+    background-color: salmon;
 }
 
 .top {
@@ -100,10 +159,4 @@ p, dl {
 footer{
     width: auto
 }
-}
-@media screen and  (min-width: 700px) {
-    
-    .top{
-      font-size: 3em;
-    }
 }
