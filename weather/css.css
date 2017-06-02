@@ -13,8 +13,9 @@ figure {
 any older browsers that don't recognize
 the HTML5 semantic elements */
 }
+
 body {
-    width:auto;
+    width: auto;
     margin: 0;
     /* remove any margin from body */
     padding: 0;
@@ -22,7 +23,6 @@ body {
     background-image: url(sunny-winter.jpg);
     background-size: cover;
     flex-grow: 1
-    
 }
 
 h1,
@@ -46,7 +46,7 @@ dl {
 header {
     background-color: aqua;
     text-align: right;
-    width:auto
+    width: auto
 }
 
 main {
@@ -73,14 +73,14 @@ li {
     padding-right: 50px
 }
 
-p, dl {
+p,
+dl {
     font-size: 2em
 }
 
 .col3 {
     order: -1;
     text-align: center;
-   
 }
 
 .top {
@@ -97,53 +97,55 @@ p, dl {
     border-radius: 5px;
     align-self: center;
 }
-footer{
+
+footer {
     width: auto
 }
+
 @media screen and (min-width: 700px) {
     header {
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         background-color: aqua;
         text-align: center;
     }
     body {
-    margin: 0;
-    /* remove any margin from body */
-    padding: 0;
-        /* ditto for padding */ 
-}
-    p{font-size: 3em}
-    body{background-image: none}
-       main{
+        margin: 0;
+        /* remove any margin from body */
+        padding: 0;
+        /* ditto for padding */
+    }
+    p {
+        font-size: 3em
+    }
+    body {
+        background-image: none
+    }
+    main {
         display: flex;
         flex-direction: row
     }
     .col1 {
         width: 200px;
         display: flex;
-        order:-1;
+        order: -1;
         height: 450px;
         background-color: white;
-        border:0px
-        
-        
+        border: 0px
     }
-      .col2 {
+    .col2 {
         width: 150px;
         display: flex;
-
     }
     .col3 {
         background-image: url(sunny-winter.jpg);
         background-size: cover;
         display: flex;
         flex-direction: column;
-       align-items: center;
+        align-items: center;
         flex-grow: 1;
         order: 0
     }
-
     nav {
         display: flex;
         background-color: salmon
@@ -163,5 +165,3 @@ footer{
         text-align: center
     }
 }
-
-
