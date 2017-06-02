@@ -36,7 +36,7 @@ ul,
 p,
 dl {
     font-size: ;
-    font-family: Sansita, "second choice", generic-family;
+    font-family: ;
 }
 
 .title h1+h1 {
@@ -81,12 +81,10 @@ p, dl {
 .col3 {
     order: -1;
     text-align: center;
-    background-image
    
 }
 
 .top {
-    width: flex;
     background-color: rgba(200, 200, 200, .6);
     border: .2px solid;
     border-radius: 5px
