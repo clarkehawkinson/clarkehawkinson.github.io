@@ -24,8 +24,7 @@ body {
     padding: 0;
     /* ditto for padding */
     background-size: cover;
-    flex-grow: 1;
-    background-image: 
+    flex-grow: 1; 
 }
 .col2{display:none}
 
@@ -46,7 +45,6 @@ dl {
     text-align: right;
     width: auto;
     font-size: 2em;
-    color
 }
 
 header {
@@ -139,7 +137,6 @@ p {
 }
 
 body {
-    background-image: none;
     background-color: salmon;
 }
 
@@ -169,7 +166,6 @@ main {
 }
 
 .col3 {
-    background-image: ;
     background-size: cover;
     display: flex;
     flex-direction: column;
