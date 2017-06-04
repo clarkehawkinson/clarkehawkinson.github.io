@@ -9,11 +9,13 @@ html,
 figcaption,
 figure {
     display: block;
-    width: auto
+    width: auto;
     /* just in case we have
 any older browsers that don't recognize
 the HTML5 semantic elements */
 }
+  
+
 
 body {
     width: auto;
@@ -21,12 +23,12 @@ body {
     /* remove any margin from body */
     padding: 0;
     /* ditto for padding */
-    background-image: url(sunny-winter.jpg);
     background-size: cover;
-    flex-grow: 1
+    flex-grow: 1;
+    background-image: 
 }
+.col2{display:none}
 
-h1,
 h2,
 h3,
 h4,
@@ -37,24 +39,27 @@ ul,
 p,
 dl {
     font-size: 1.1em;
+    color: white;
 }
 
-.title h1+h1 {
+.title {
     text-align: right;
-    width: auto
+    width: auto;
+    font-size: 2em;
+    color
 }
 
 header {
     background-color: aqua;
     text-align: right;
-    width: auto
+    width: auto;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: auto
+    width: auto;
 }
 
 nav {
@@ -66,7 +71,7 @@ nav {
     width: auto
 }
 
-ul {
+nav ul {
     display: flex;
 }
 
@@ -82,6 +87,7 @@ dl {
 .col3 {
     order: -1;
     text-align: center;
+
 }
 
 .top {
@@ -97,72 +103,102 @@ dl {
     border: 1px solid;
     border-radius: 5px;
     align-self: center;
+    
 }
 
 footer {
     width: auto
 }
-
+#sun {
+    background-image: url(sunny-winter.jpg);
+}
+    #thunder{
+        background-image: url(lightning001a.jpg);
+        background-size: cover;}
+   
 @media only screen and (min-width: 700px) {
-    header {
-        margin: 0;
-        padding: 0;
-        background-color: aqua;
-        text-align: center;
-    }
-    body {
-        margin: 0;
-        /* remove any margin from body */
-        padding: 0;
-        /* ditto for padding */
-    }
-    p {
-        font-size: 3em
-    }
-    body {
-        background-image: none
-    }
-    main {
-        display: flex;
-        flex-direction: row
-    }
-    .col1 {
-        width: 200px;
-        display: flex;
-        order: -1;
-        height: 450px;
-        background-color: white;
-        border: 0px
-    }
-    .col2 {
-        width: 150px;
-        display: flex;
-    }
-    .col3 {
-        background-image: url(sunny-winter.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-grow: 1;
-        order: 0
-    }
-    nav {
-        display: flex;
-        background-color: salmon
-    }
-    li {
-        padding-right: 50px
-    }
-    ul {
-        display: flex;
-    }
-    .top {
-        flex-direction: column;
-        background-color: rgba(200, 200, 200, .6);
-        border: 1px solid;
-        border-radius: 5px;
-        width: 150px;
-        text-align: center
-    }
+
+    
+
+header {
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    /* remove any margin from body */
+    padding: 0;
+    /* ditto for padding */
+}
+
+p {
+    font-size: 3em
+}
+
+body {
+    background-image: none;
+    background-color: salmon;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch
+}
+
+.col1 {
+    width: 200px;
+    display: flex;
+    order: -1;
+    align-self: flex-start;
+    border: 0px;
+    flex-grow: 1;
+}
+
+.col2 {
+    flex-grow: 1;
+    display: flex;
+}
+
+.col2 ul {
+    align-content: center;
+    flex-direction: column;
+}
+
+.col3 {
+    background-image: ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 3;
+    order: 0;
+}
+
+nav {
+    display: flex;
+    background-color: salmon;
+}
+
+li {
+    padding-right: 50px;
+}
+
+ul {
+    display: flex;
+}
+
+.top {
+    flex-direction: column;
+    background-color: rgba(200, 200, 200, .6);
+    border: 1px solid;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center
+}
+
+
 }
