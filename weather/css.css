@@ -112,7 +112,9 @@ footer {
 }
     #thunder{
         background-image: url(lightning001a.jpg);
-        background-size: cover;}
+        background-size: cover;
+        
+}
    
 @media only screen and (min-width: 700px) {
 
@@ -133,7 +135,6 @@ body {
 }
 
 p {
-    font-size: 3em
 }
 
 body {
@@ -147,17 +148,20 @@ main {
 }
 
 .col1 {
-    width: 200px;
     display: flex;
     order: -1;
     align-self: flex-start;
     border: 0px;
-    flex-grow: 1;
+    flex-grow:1;
+    background-color: salmon;
+    height: 600px;
+    border-radius: 0px;
 }
 
 .col2 {
     flex-grow: 1;
     display: flex;
+    background-color: salmon
 }
 
 .col2 ul {
