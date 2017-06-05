@@ -14,8 +14,6 @@ figure {
 any older browsers that don't recognize
 the HTML5 semantic elements */
 }
-  
-
 
 body {
     width: auto;
@@ -23,10 +21,21 @@ body {
     /* remove any margin from body */
     padding: 0;
     /* ditto for padding */
-    background-size: cover;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
-.col2{display:none}
+
+#sun {
+    background-image: url(sunny-winter.jpg);
+    background-size: cover
+}
+#thunder {
+    background-image: url(lightning001a.jpg);
+    background-size: cover;
+    
+}
+.col2 {
+    display: none
+}
 
 h2,
 h3,
@@ -38,7 +47,7 @@ ul,
 p,
 dl {
     font-size: 1.1em;
-    color: white;
+    color:black;
 }
 
 .title {
@@ -65,7 +74,7 @@ nav {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: salmon;
+    background-color: white;
     width: auto
 }
 
@@ -85,7 +94,7 @@ dl {
 .col3 {
     order: -1;
     text-align: center;
-
+    color: black;
 }
 
 .top {
@@ -101,104 +110,78 @@ dl {
     border: 1px solid;
     border-radius: 5px;
     align-self: center;
-    
 }
 
 footer {
     width: auto
 }
-#sun {
-    background-image: url(sunny-winter.jpg);
-}
-    #thunder{
-        background-image: url(lightning001a.jpg);
-        background-size: cover;
-        
-}
-   
+
+
+
 @media only screen and (min-width: 700px) {
-
-    
-
-header {
-    margin: 0;
-    padding: 0;
-    background-color: aqua;
-    text-align: center;
-}
-
-body {
-    margin: 0;
-    /* remove any margin from body */
-    padding: 0;
-    /* ditto for padding */
-}
-
-p {
-}
-
-body {
-    background-color: salmon;
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch
-}
-
-.col1 {
-    display: flex;
-    order: -1;
-    align-self: flex-start;
-    border: 0px;
-    flex-grow:1;
-    background-color: salmon;
-    height: 600px;
-    border-radius: 0px;
-}
-
-.col2 {
-    flex-grow: 1;
-    display: flex;
-    background-color: salmon
-}
-
-.col2 ul {
-    align-content: center;
-    flex-direction: column;
-}
-
-.col3 {
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 3;
-    order: 0;
-}
-
-nav {
-    display: flex;
-    background-color: salmon;
-}
-
-li {
-    padding-right: 50px;
-}
-
-ul {
-    display: flex;
-}
-
-.top {
-    flex-direction: column;
-    background-color: rgba(200, 200, 200, .6);
-    border: 1px solid;
-    border-radius: 5px;
-    width: 150px;
-    text-align: center
-}
-
-
+    header {
+        margin: 0;
+        padding: 0;
+        background-color: aqua;
+        text-align: center;
+    }
+    body {
+        margin: 0;
+        /* remove any margin from body */
+        padding: 0;
+        /* ditto for padding */
+    }
+    p {}
+    body {
+        background-color: white;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch
+    }
+    .col1 {
+        display: flex;
+        order: -1;
+        align-self: flex-start;
+        border: 0px;
+        flex-grow: 1;
+        background-color: white;
+        height: 600px;
+        border-radius: 0px;
+    }
+    .col2 {
+        flex-grow: 1;
+        display: flex;
+        background-color: white
+    }
+    .col2 ul {
+        align-content: center;
+        flex-direction: column;
+    }
+    .col3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 3;
+        order: 0;
+    }
+    nav {
+        display: flex;
+        background-color: salmon;
+    }
+    li {
+        padding-right: 50px;
+    }
+    ul {
+        display: flex;
+    }
+    .top {
+        flex-direction: column;
+        background-color: rgba(200, 200, 200, .6);
+        border: 1px solid;
+        border-radius: 5px;
+        width: 150px;
+        text-align: center
+    }
 }
