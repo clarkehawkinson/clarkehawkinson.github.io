@@ -261,6 +261,7 @@ body {
 	position:relative;
 	height:30px;
 	background:rgba(0, 167, 255, 0.86);
+    display: flex;
 }
 
 .footer h5 {
@@ -278,4 +279,8 @@ body {
 	color:inherit;
 }
 
+.footer li{
+    display: flex;
+    flex-wrap: wrap
+}
 
