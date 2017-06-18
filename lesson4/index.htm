@@ -9,21 +9,21 @@
 	<!--<script src="js/jquery-3.0.0.min.js"></script>-->
     <script>
         $(function() {
-//            var toggleStyle = function() {
+            var toggleStyle = function() {
 
-//                var inputFields = $('input[type="text"]');
+                var inputFields = $('input[type="text"]');
 
-  //              if (inputFields.css('background-color') === 'rgb(255, 0, 0)') {
+                if (inputFields.css('background-color') === 'rgb(255, 0, 0)') {
                     //set background color to white
-//                    inputFields.css('background-color', 'rgb(255, 255, 255)')
-//                } else {
-//                    inputFields.css('background-color', 'rgb(255, 0, 0)')
-//                }
-//            }
+                    inputFields.css('background-color', 'rgb(255, 255, 255)')
+                } else {
+                    inputFields.css('background-color', 'rgb(255, 0, 0)')
+                }
+            }
 
-//            $('#ReqAQuoteBtn').click(toggleStyle);
+            $('#ReqAQuoteBtn').click(toggleStyle);
 
-//            $('.coreValues').prepend("<li><strong> This is a brand new li</strong></li>")
+            $('.coreValues').prepend("<li><strong> This is a brand new li</strong></li>")
 
             var nameVal = $('input[name="nameVal"]');
 
@@ -130,7 +130,12 @@
         </div>
 
         <div class="footer">
-            <h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
+            <h5>© Alcove Digital Systems | <li><a href="/InsertHTMLBegin.htm">Insert HTML Begin</a></li>
+                    <li><a href="/animatedMenuBegin.htm">Animated Menu Begin</a></li>
+                    <li><a href="/toggleButtonBegin.htm">Toggle Button Begin</a></li>
+                    <li><a href="/DropDownMenuBegin.htm">Dropdown Menu Begin</a></li>
+                    <li><a href="/fruitBasketBegin.htm">Fruit Basket Begin</a></li> <a href="#">Terms of Use</a>
+            <ul></ul></h5>
         </div>
     </div>
 </body>
