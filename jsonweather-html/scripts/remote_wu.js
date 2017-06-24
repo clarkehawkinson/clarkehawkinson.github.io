@@ -33,6 +33,8 @@ dataType : "jsonp",
 
 $("#currentTemp").html(temp_f);
 $("#cityDisplay").html(location+","+state);
+$("#")  
+
 $("#cover").fadeOut(250);
     }
     });
