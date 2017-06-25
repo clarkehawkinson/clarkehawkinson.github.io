@@ -3,7 +3,7 @@
 <html lang="en-us">
 
 <head>
-    <link href="weather/css.css" rel="stylesheet">
+    <link href="jsonweather-html/weather/css.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
 
@@ -33,16 +33,23 @@
 
 
         <section class="col3">
-            <h2>Greenville, SC<img src="weather/lightning001a.jpg" alt="thunder" width="40"></h2>
+            <h2><img src="" alt="thunder" width="40"></h2>
             <section class="top">
-                <p>25 &deg;</p>
-                <p>27&deg;/10&deg;</p>
-
+                        <h1 id="cityDisplay"></h1>
+        <h2>Current Conditions</h2>
+        <ul id="current_conditions" style="list-style-type:none">
+          <li id="currentTemp"></li>
+          <li id="summary"></li>
+          <li id="windMph"></li>
+          <li id="windDir"></li>
+          <li id="pressureIn"></li>
+        </ul>
             </section>
             <p><strong>Thunderstorms</strong></p>
         </section>
         <section class="col1">
             <section class="cur_conditions">
+                
                 <h2> <img src="weather/lightning001a.jpg" alt="thunder" width="40"> Current Conditions</h2>
                     <p>Wind: 1-5 Mph Northeast</p>
                 <p>Preceptition: 0 in</p>
@@ -59,25 +66,27 @@
            <li>"6": 69,</li>
            <li>"7": 72,</li>
            <li>"8": 74,</li>
-           <li>	"9": 77,</li>
-           <li>	"10": 79,</li>
-           <li>	"11": 81,</li>
-           <li>	"12": 84,</li>
-           <li>	"13": 86,</li>
-           <li>	"14": 88,</li>
-           <li>	"15": 90,</li>
-           <li>	"16": 90,</li>
-           <li>	"17": 85,</li>
-           <li>	"18": 83,</li>
-           <li>	"19": 79,</li>
-           <li>	"20": 74,</li>
-           <li>	"21": 70,</li>
-           <li>	"22": 68,</li>
-           <li>	"23": 66</li>   
+           <li>"9": 77,</li>
+           <li>"10": 79,</li>
+           <li>"11": 81,</li>
+           <li>"12": 84,</li>
+           <li>"13": 86,</li>
+           <li>"14": 88,</li>
+           <li>"15": 90,</li>
+           <li>"16": 90,</li>
+           <li>"17": 85,</li>
+           <li>"18": 83,</li>
+           <li>"19": 79,</li>
+           <li>"20": 74,</li>
+           <li>"21": 70,</li>
+           <li>"22": 68,</li>
+           <li>"23": 66</li>   
         </ul>
  </section></section>
     </main>
-
+    <script src="jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
+    <script src="jsonweather-html/scripts/modules.js"></script>
+    <script src="jsonweather-html/scripts/remote_wu_greenville.js"></script>
 <footer>
     &copy;Clarke Hawkinson <a href="index.html">Home</a>
     <section class="nav">
