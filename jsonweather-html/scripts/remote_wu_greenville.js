@@ -38,7 +38,7 @@ $("#currentTemp").html(temp_f);
 $("#cityDisplay").html(location+","+state);
 $("#windMph").html("Wind Speed "+windMph+" Mph")  
 $("#windDir").html("Wind Direction "+windDir)
-$("#pressureIn").html(+pressureIn+" In");
+$("#pressureIn").html(pressureIn+" In");
 
       
       $("#cover").fadeOut(250);
