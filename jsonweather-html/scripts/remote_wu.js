@@ -34,11 +34,11 @@ dataType : "jsonp",
   var windDir = parsed_json['current_observation']['wind_dir'];
   var pressureIn = parsed_json['current_observation']['pressure_in'];
 
-$("#currentTemp").html(temp_f);
+$("#currentTemp").html(temp_f+"&#8457");
 $("#cityDisplay").html(location+","+state);
-$("#windMph").html("Wind Speed "+windMph+" Mph")  
-$("#windDir").html("Wind Direction "+windDir)
-$("#pressureIn").html(+pressureIn+" In");
+$("#windMph").html("Wind Speed: "+windMph+" Mph")  
+$("#windDir").html("Wind Direction: "+windDir)
+$("#pressureIn").html("Current Pressure: "+pressureIn+" InHg");
 
       
       $("#cover").fadeOut(250);
