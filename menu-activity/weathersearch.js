@@ -1,3 +1,4 @@
+var returned;
 $('#query').keyup(function () {
     var value = $('#query').val();
     var rExp = new RegExp(value, "i");
@@ -17,6 +18,19 @@ $('#query').keyup(function () {
     });
 });
 // Get weather data from wunderground.com
+
+// Intercept the menu link clicks
+$("#searchResults").on("click", "a", function (evt) {
+  evt.preventDefault();
+  // With the text value get the needed value from the weather.json file
+  var jsonCity = $(this).text(); // Franklin, etc...
+  console.log(jsonCity);
+    index = $(this).index("a");
+    getData(returned.RESULTS[index].name);
+    //hide search results
+    document.getElementById('searchResults').style.display = 'none';
+});
+
 function getData(input) {
   // Get the data from the wunderground API
   $.ajax({
@@ -37,21 +51,3 @@ function getData(input) {
     }
   });
 }
-// Intercept the menu link clicks
-$("#page-nav").on("click", "a", function (evt) {
-  evt.preventDefault();
-  // With the text value get the needed value from the weather.json file
-  var jsonCity = $(this).text(); // Franklin, etc...
-  console.log(jsonCity);
-  $.ajax({
-    url: "/menu-activity/scripts/weather.json"
-    , dataType: "json"
-    , success: function (data) {
-      console.log(data);
-      console.log(data[jsonCity]);
-      var zip = data[jsonCity].zip;
-      console.log(zip);
-      getData(zip);
-    }
-  });
-});
