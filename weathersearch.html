@@ -4,6 +4,7 @@
     <title>Weather Center</title>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="jsonweather-html/CSS/weather-css.css">
 </head>
 <!-- *********************************************
 * Who Did You Collaborate With On This Activity?
@@ -13,6 +14,23 @@
 * 4. 
 * 5.
 * ******************************************** -->
+<header>
+        <section class="overview">
+            <div class="title">
+                <h1><span>&#9856;</span><span class="dice">&#9861;</span>Feeling Lucky</h1>
+                <h1>Local Weather</h1>
+            </div>
+        </section>
+    </header>
+    <nav>
+        <ul style="list-style-type:none">
+            <li><a href="jsonweather-html/index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville </a></li>
+            <li><a href="#">Sprngvield</a></li>
+            <li><a href="#">Search </a></li>
+        </ul>
+    </nav>
 
 <body>
     <header>
@@ -22,17 +40,17 @@
         </form>
     </header>
 
-
+</body>
     <main>
         <section id="searchResults">
             <h2>Search Results</h2>
         </section>
         <h1 id="cityDisplay"></h1>
-         <ul>
+         <ul style="list-style-type:none">
             <li id="title"></li>
-            <li id="currentTemp"></li>
-            <li id="add1"></li>
-            <li id="add2"></li>
+            <li id="currentTemp">Current Tempature</li>
+            <li id="add1">Conditions</li>
+            <li id="add2">High/Low:</li>
         </ul>
     </main>
     <footer id="page-footer">
@@ -48,6 +66,5 @@
   crossorigin="anonymous"></script>
     <script src="menu-activity/weathersearch.js"></script>
 
-</body>
 
 </html>

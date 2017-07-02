@@ -18,44 +18,51 @@ figure {
     /* just in case we have
 any older browsers that don't recognize
 the HTML5 semantic elements */
-background-color: salmon
 }
 
 body {
+    display:flex wrap;
     margin: 0;
     /* remove any margin from body */
     padding: 0;
     /* ditto for padding */
     
     font-size: 20px;
-    background-image: url("sunny-winter.jpg");
-    background-size: cover; 
-    
+    background-color: salmon;
+    align-content: flex-end
 }
 
 main {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
     align-items: center;
 }
-
-ul {
-    display: flex
+main ul{
+    flex-flow: column;
+    text-align: center;
 }
 
-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: salmon
+nav ul {
+    display: flex;
+}
+
+nav li{
+    display: flex wrap;
+    font-size: 1.5em;
+    padding-right: 50px
     
 }
 nav a:link {text-decoration: none;
 color: #47556f}
 
-.title h1+h1 {
-    text-align: right
+.title {
+    text-align: right;
+    background-color: aqua;
+    font-size: 2em
 }
-
-h1, h2, h3, h4, h5, h6, { font-family: Sansita, "second choice", generic-family;}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, { font-family: Sansita, "second choice", generic-family;}

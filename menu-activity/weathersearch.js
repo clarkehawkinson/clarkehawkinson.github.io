@@ -17,9 +17,9 @@ function getData(input) {
             console.log('Location is: ' + location);
             console.log('Temp is: ' + temp_f);
             $("#title").html(location + " | Weather Center");
-            $("#currentTemp").html(Math.round(temp_f) + '°');
-            $("#add1").text(toTitleCase(data.current_observation.weather));
-            $("#add2").html(tempHigh + "°F / " + tempLow + '°F')
+            $("#currentTemp").html("Current Tempature: " + Math.round(temp_f) + '°F');
+            $("#add1").text(toTitleCase("Current Condition: " + data.current_observation.weather));
+            $("#add2").html("High/Low: " + tempHigh + "°F / " + tempLow + '°F')
             $("#").fadeOut(250);
         }
     });
