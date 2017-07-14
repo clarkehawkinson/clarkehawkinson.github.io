@@ -1,0 +1,37 @@
+body {
+    background-image: url(/acme/images/site/background.jpg);
+    background-size: cover;
+}
+
+nav ul {
+    display: flex;
+    padding: 10px
+}
+
+main li {
+    display: flex;
+}
+
+main {
+    font-size: 3em;
+    background-color: white
+}
+#test{
+    background-color: white
+}
+
+#section2 {
+    display: flex;
+}
+
+#section3 {
+    display: flex;
+}
+
+nav {
+    background-color: #de2226;
+}
+
+footer {
+    text-align: center
+}
