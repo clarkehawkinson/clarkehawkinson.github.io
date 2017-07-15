@@ -8,6 +8,10 @@
 	font-family: "Arial", sans-serif;
 }
 
+#price{
+    color: red;
+    font-size: 3em
+}
 #rocket {
 	display: flex;
 	background-image: url(../images/site/feature.jpg);
@@ -94,6 +98,10 @@ main {
 		display: flex;
 		flex-direction: column-reverse;
 	}
+    #image{
+        width: 50%;
+        height: auto;
+}
 
 @media only screen and (min-width:800px) {
 	#rocket {

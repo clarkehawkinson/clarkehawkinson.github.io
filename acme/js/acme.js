@@ -13,7 +13,6 @@ $(document).ready(function () {
 			$("#li3").html("<a href='#'>" + data.nav.links3 + "</a>");
 			$("#li4").html("<a href='#'>" + data.nav.links4 + "</a>");
 			$("#li5").html("<a href='#'>" + data.nav.links5 + "</a>");
-			$("#prod").hide();
 		}
 		//want to use onclick events when you select the links
 	});
@@ -25,8 +24,7 @@ $("nav").on("click", "a", function () {
 	if (link!="Home") {
 		$("#rocket").hide();
 		$("#lower-half").hide();
-		$("#prod").show();
-		$("#productTitle").show();
+		$("#displaySection").show();
 		
 		$.ajax({
 			url: "js/acme.json",
@@ -39,22 +37,20 @@ $("nav").on("click", "a", function () {
 				var review = (data[link].reviews);
 				var price = (data[link].price);
 				var title = (data[link].name);
-                $("#productName").html(" "+ title)
-				$("#productImage").html("<img src='" + picPath + "' alt='"+link+" product'>");
+                $("#productName").html(" "+ title);
+				$("#productImage").html("<img src=' "+picPath+"' alt='"+link+" 'id='image'>");
+//                                     ("<img src=' "+picPath+"' alt='"+link+" 'id='"+image+"'>")
 				$("title").html(link+ " | Acme Inc.");
                 $("#made").html("<strong>Made By:</strong> " + made);
 				$("#summary").html(summary);
 				$("#review").html("<strong>Reviews:</strong> " + review);
 				$("#price").html("<strong>Price: " + price+"</strong>");
-			
 			}
-			
 		});
-	} else {
+	}
+    else {
 		$("#rocket").show();
 		$("#lower-half").show();
-		$("#productTitle").hide();
-		$("#prod").hide();
-		$("title").html("ACME Home");
+		$("#displaySection").hide();
 	}
 });
