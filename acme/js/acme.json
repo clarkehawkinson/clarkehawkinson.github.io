@@ -1,9 +1,9 @@
-{    "navigation":{
-        "link1": "Home",
-        "link2": "Anvils",
-        "link3": "Explosives",
-        "link4": "Decoys",
-        "link5": "Traps"    
+{    "nav":{
+        "links1": "Home",
+        "links2": "Anvils",
+        "links3": "Explosives",
+        "links4": "Decoys",
+        "links5": "Traps"    
     },
     "Anvils":{
       "name": "Anvil",

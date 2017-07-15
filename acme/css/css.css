@@ -62,20 +62,19 @@ nav {
 	display: flex;
 	background-color: red;
 	color: white;
-	justify-content: space-around;
 }
 
 nav ul {
 	display: flex;
 	flex-direction: row;
 	list-style: none;
-	justify-content: space-around;
-	padding: 0;
-	
+	padding: 0;	
 }
 
 nav ul li {
 	display: flex;
+    padding-right: 30px
+    
 }
 
 footer {
@@ -116,5 +115,20 @@ main {
 	#reviews{
 		padding-bottom: 60px;
 	}
-	
+    #productImage{
+        display: flex;
+        width: 50%;
+    }
+    #productImage img{
+        height: 75%;
+        width: auto
+    }
+    #prodSummary{
+        width: 50%
+            
+    }
+    #displaySection{
+        display:flex;
+        flex-flow: row;
+    }
 }

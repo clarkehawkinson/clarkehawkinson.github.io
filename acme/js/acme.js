@@ -1,89 +1,60 @@
 var selectLink = "";
 var jsonData = null;
 //Gets the links ready
-$(".link").ready(function () {
+$(document).ready(function () {
+	$("title").html("ACME Home");
 	$.ajax({
-		url: "acme.json",
+		url: "js/acme.json",
 		dataType: "json",
 		success: function (data) {
 			console.log(data);
-			$("#links1").html("<a href='#'>" + data.nav.link0 + "</a>");
-			$("#links2").html("<a href='#'>" + data.nav.link1 + "</a>");
-			$("#links3").html("<a href='#'>" + data.nav.link2 + "</a>");
-			$("#links4").html("<a href='#'>" + data.nav.link3 + "</a>");
-			$("#links5").html("<a href='#'>" + data.nav.link4 + "</a>");
+			$("#li1").html("<a href='#'>" + data.nav.links1 + "</a>");
+			$("#li2").html("<a href='#'>" + data.nav.links2 + "</a>");
+			$("#li3").html("<a href='#'>" + data.nav.links3 + "</a>");
+			$("#li4").html("<a href='#'>" + data.nav.links4 + "</a>");
+			$("#li5").html("<a href='#'>" + data.nav.links5 + "</a>");
 			$("#prod").hide();
 		}
 		//want to use onclick events when you select the links
 	});
 
-})
-$("#links1").on("click", function () {
-	var link = $(this).find("a").html();
-	console.log("the link is:" + link);
-	replacePro(link);
 });
-$("#links2").on("click", function () {
-	var link = $(this).find("a").html();
+$("nav").on("click", "a", function () {
+	var link = $(this).text();
 	console.log("the link is:" + link);
-	$.ajax({
-		url: "/acme/js/acme.json",
-		dataType: "json",
-		success: function (data) {
-			var picPath= data.Anvils.path;
-			var made = data.Anvils.manufacturer;
-			var summary = data.Anvils.description;
-			var review= data.Anvils.reviews;
-			var price= data.Anvils.price;
-			$("#productImage").html("<img src='"+picPath+"'>");
-			$("#made").html("<strong>Made By:</strong> "+made);
-			$("#summary").html(summary);
-			$("#review").html("<strong>Reviews:</strong> "+review);
-			$("#price").html("Price: "+ price);
-		}
-	});
-	replacePro(link);
-});
-$("#links3").on("click", function () {
-	var link = $(this).find("a").html();
-	console.log("the link is:" + link);
-	$.ajax({
-		url: "/acme/js/acme.json",
-		dataType: "json",
-		success: function (data) {
-			var picPath= data.Explosives.path;
-			var made = data.Explosives.manufacturer;
-			var summary = data.Explosives.description;
-			var review= data.Explosives.reviews;
-			var price= data.Explosives.price;
-			$("#productImage").html("<img src='"+picPath+"'>");
-			$("#made").html("<strong>Made By:</strong> "+made);
-			$("#summary").html(summary);
-			$("#review").html("<strong>Reviews:</strong> "+review);
-			$("#price").html("Price: "+ price);
-		}
-	});
-	replacePro(link);
-});
-$("#links4").on("click", function () {
-	var link = $(this).find("a").html();
-	console.log("the link is:" + link);
-	replacePro(link);
-});
-$("#links5").on("click", function () {
-	var link = $(this).find("a").html();
-	console.log("the link is:" + link);
-	replacePro(link);
-});
-
-function replacePro(link) {
-	if (link !== "Home") {
+	if (link!="Home") {
 		$("#rocket").hide();
 		$("#lower-half").hide();
 		$("#prod").show();
+		$("#productTitle").show();
+		
+		$.ajax({
+			url: "js/acme.json",
+			dataType: "json",
+			success: function (data) {
+				console.log(data);
+				var picPath = (data[link].path);
+				var made = (data[link].manufacturer);
+				var summary = (data[link].description);
+				var review = (data[link].reviews);
+				var price = (data[link].price);
+				var title = (data[link].name);
+                $("#productName").html(" "+ title)
+				$("#productImage").html("<img src='" + picPath + "' alt='"+link+" product'>");
+				$("title").html(link+ " | Acme Inc.");
+                $("#made").html("<strong>Made By:</strong> " + made);
+				$("#summary").html(summary);
+				$("#review").html("<strong>Reviews:</strong> " + review);
+				$("#price").html("<strong>Price: " + price+"</strong>");
+			
+			}
+			
+		});
 	} else {
 		$("#rocket").show();
 		$("#lower-half").show();
+		$("#productTitle").hide();
 		$("#prod").hide();
+		$("title").html("ACME Home");
 	}
-}
+});
